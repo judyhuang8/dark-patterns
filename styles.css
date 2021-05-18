@@ -1,0 +1,42 @@
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  max-width: 60%;
+  margin: 50px auto;
+}
+
+img{
+  max-width: 400px;
+}
+.hidden{
+  display: none;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+.info{
+  max-width: 50%;
+  margin-right: 20px;
+}
+a{
+  color: blue;
+}
+.links{
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+}
+.margin-left{
+  margin-left: 20px;
+}
+
+#rm-directions{
+  margin-bottom: 50px;
+}
+@media screen and (max-width:800px){
+  .info{
+    max-width: 100%;
+  }
+}

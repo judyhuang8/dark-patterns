@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <a href="index.html">Home</a>
+  <p>
+    Disclaimer: All information provided is false and for the purpose of
+    showcasing a roach motel dark pattern. No information provided
+    will be kept or used.
+    <br>
+    ------
+  </p>
+
+  <p id="rm-directions">
+    Directions: For the purpose of this example, try to sign up for a subscription and then try
+    to delete your subscription.
+  </p>
+
+  <div id="rm-signup">
+    <p>Sign up for our monthly subscription!</p>
+    <div>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname">
+    </div>
+
+    <div>
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname">
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+    </div>
+
+    <div>
+      <button id="rm-submit">Submit</button>
+    </div>
+  </div>
+
+  <div id="rm-ty" class="hidden">
+    <p>Thank you for signing up for our monthly subscription!</p>
+    <div id="rm-acc">
+      <p class="links">Account Info</p>
+    </div>
+  </div>
+
+  <div id="rm-acc-info" class="hidden">
+    <p class="links" id="rm-acc-settings-link"> Account settings </p>
+    <div id="rm-acc-settings" class="hidden margin-left">
+      <p class="links">Update your name</p>
+      <p class="links">Update your email address</p>
+    </div>
+    <p class="links" id="rm-sub-details-link"> Subscription Details </p>
+    <div id="rm-sub-details" class="hidden margin-left">
+      <p> You have a monthly subscription. You can upgrade to a premium subscription
+        <a href="">here</a>.
+      </p>
+    </div>
+    <p class="links" id="rm-support-link">Support</p>
+    <div id="rm-support" class="hidden margin-left">
+      <p>You can contact us at 555-1234 for any assistance.</p>
+      <p>Visit our <span class="links" id="rm-faq-link">FAQs</span> for answers to common questions.</p>
+    </div>
+  </div>
+
+  <div id="rm-faq" class="hidden">
+    <ol>
+      <li>
+        How do I unsubscribe from a monthly subscription?
+        <p>To unsubscribe click <span class="links" id="rm-unsub-link">here</span>. </p>
+      </li>
+    </ol>
+  </div>
+
+  <div id="rm-unsub-ty" class="hidden">
+    You have succesfully unsubscribed.
+  </div>
+
+</body>
+
+</html>

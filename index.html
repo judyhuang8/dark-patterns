@@ -2,11 +2,99 @@
 <html>
 
 <head>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP">
 </head>
 
 <body>
+  <h1>Dark Patterns</h1>
 
+  <p>
+    Dark Patterns is a term coined by Harry Brignull, to describe
+    the various ways businesses trick users into doing something that they didn't
+    mean to do (ie. creating a subscription). In some cases, these tricks also
+    hinder users from doing what they want to do (ie. cancelling a subscription).
+    These tricks are mainly applied through websites or apps.
+  </p>
+
+  <p>
+    This website explores the various types of dark patterns that businesses
+    use as well as provide examples so that users can be well informed.
+  </p>
+
+  <h2>Types of Dark Patterns</h2>
+  <h3>Roach Motel</h3>
+  <div>
+    <p>
+      Have you ever tried deleting your Amazon account? Prior to 2020, to close
+      your Amazon account you had to navigate through many links on the website
+      in order to do so. <a href="https://youtu.be/kxkrdLI6e6M?t=20">Here is a video</a>
+      that illustrates how challenging it was to delete your Amazon account.
+    </p>
+    <p>
+      Creating an account, in comparison is much simplier. By entering your name,
+      email, and setting a password, you can create an Amazon account. This design
+      in which it is easy to enter the business (ie. creating an account), but hard to get
+      out of (ie. cancelling a subscription) is what is known as a Roach Motel.
+    </p>
+    <p>
+      Click <a href="roach-motel.html">here</a> to try out an example of a roach motel dark pattern.
+    </p>
+  </div>
+
+
+
+  <h3>Misdirection</h3>
+  <div class="row">
+    <div class="info">
+      <p>
+        Misdirection is when the design of something (ie. buttons) is done to purposefully
+        get your attention on one things, in order to distract you from another. One
+        classic example is the color of a button. Designers make the color of the button
+        they want you to click on a bold or bright color, while leaving the other option
+        a more netural background color.
+      </p>
+
+      <p>
+        This example of misdirection by Instagram tricks users into allowing Instagram
+        to gain access of more of their person information. By making the button a
+        bright blue color, it makes users more likely to select it.
+      </p>
+      <p>
+        Click <a href="misdirection.html">here</a> to try out an example of a misdirection dark pattern.
+      </p>
+    </div>
+
+    <img src="imgs/insta.jpg">
+
+  </div>
+
+
+  <h3>Tricky Questions</h3>
+  <p>
+    By using confusing language, like double negatives, it creates confusion in
+    the users and thereby tricking them into signing up for something they didn't
+    mean to sign up for. This is most commonly seen in the checkboxes for email
+    subscriptions.
+  </p>
+
+  <p>
+    An exmaple of a tricky question is shown below:
+  </p>
+
+  <div>
+    <input type="checkbox" id="no-spam" name="no-spam">
+    <label for="no-spam">Please do not send me promotional emails and offers</label>
+  </div>
+  <div>
+    <input type="checkbox" id="also-no-spam" name="also-no-spam">
+    <label for="also-no-spam">Please do not uncheck if you wish to not receive promotional
+      emails and offers.
+    </label>
+  </div>
+  <h2>Regulations</h2>
 </body>
 
 </html>
