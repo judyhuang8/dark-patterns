@@ -3,9 +3,16 @@ body{
   max-width: 60%;
   margin: 50px auto;
 }
-
+h3{
+  color:cadetblue;
+}
 img{
   max-width: 400px;
+  max-height: 600px;
+}
+#header{
+  max-width: 70%;
+  max-height: fit-content;
 }
 .hidden{
   display: none;
@@ -14,7 +21,10 @@ img{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
+  justify-content: space-around;
+}
+.float-right{
+  float:right;
 }
 .info{
   max-width: 50%;
@@ -29,7 +39,7 @@ a{
   color: blue;
 }
 .margin-left{
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 #rm-directions{

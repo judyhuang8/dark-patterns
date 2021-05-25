@@ -10,6 +10,16 @@
 </head>
 
 <body>
+  <div class="row">
+    <img id="header" src="imgs/header.jpg">
+
+    <!-- source:
+    https://www.nytimes.com/2016/05/15/technology/personaltech/when-websites-wont-take-no-for-an-answer.html?_r=0 -->
+  </div>
+  <a class="float-right"
+    href="https://www.nytimes.com/2016/05/15/technology/personaltech/when-websites-wont-take-no-for-an-answer.html?_r=0">
+    img source</a>
+
   <h1>Dark Patterns</h1>
 
   <p>
@@ -32,7 +42,7 @@
       href="https://www.darkpatterns.org/types-of-dark-patterns">here.</a>
   </p>
   <h3>Roach Motel</h3>
-  <div>
+  <div class="margin-left">
     <p>
       Have you ever tried deleting your Amazon account? Prior to 2020, to close
       your Amazon account you had to navigate through many links on the website
@@ -47,6 +57,8 @@
     </p>
     <p>
       Click <a href="roach-motel.html">here</a> to try out an example of a roach motel dark pattern.
+      In the example provided, there are many misleading words that deceive users into
+      thinking that they can unsubscribe from there, when it is not the case.
     </p>
   </div>
 
@@ -76,130 +88,163 @@
 
 
   <h3>Tricky Questions</h3>
-  <p>
-    By using confusing language, like double negatives, it creates confusion in
-    the users and thereby tricking them into signing up for something they didn't
-    mean to sign up for. This is most commonly seen in the checkboxes for email
-    subscriptions.
-  </p>
+  <div class="margin-left">
+    <p>
+      By using confusing language, like double negatives, it creates confusion in
+      the users and thereby tricking them into signing up for something they didn't
+      mean to sign up for. This is most commonly seen in the checkboxes for email
+      subscriptions.
+    </p>
 
-  <p>
-    An exmaple of a tricky question is shown below:
-  </p>
+    <p>
+      An exmaple of a tricky question is shown below:
+    </p>
 
-  <div>
-    <input type="checkbox" id="no-spam" name="no-spam">
-    <label for="no-spam">Please do not send me promotional emails and offers</label>
+    <div>
+      <input type="checkbox" id="no-spam" name="no-spam">
+      <label for="no-spam">Please do not send me promotional emails and offers</label>
+    </div>
+    <div>
+      <input type="checkbox" id="also-no-spam" name="also-no-spam">
+      <label for="also-no-spam">Please do not uncheck if you wish to not receive promotional
+        emails and offers.
+      </label>
+    </div>
   </div>
-  <div>
-    <input type="checkbox" id="also-no-spam" name="also-no-spam">
-    <label for="also-no-spam">Please do not uncheck if you wish to not receive promotional
-      emails and offers.
-    </label>
-  </div>
+
 
   <h3>Confirmshaming</h3>
-  <p>
-    Similar to tricky questions, confirmshaming is phrasing of decline options that
-    are in a way to shame the user into compliance. It is the act of guilting the
-    user into something that they did not want. The most common form of confirmshaming
-    is when sites ask you to sign up for newletters or promotions.
-  </p>
-  <img src='imgs/confirmshaming.png'>
-  <p>
-    By using phrases like "No thanks, I'm not into savings" or "No, I'd like to pay full price",
-    business trick users into feeling guilty about clicking the no option.
 
-  </p>
+  <div class="row">
+    <div class="info">
+      <p>
+        Similar to tricky questions, confirmshaming is phrasing of decline options that
+        are in a way to shame the user into compliance. It is the act of guilting the
+        user into something that they did not want. The most common form of confirmshaming
+        is when sites ask you to sign up for newletters or promotions.
+      </p>
+      <p>
+        By using phrases like "No thanks, I'm not into savings" or "No, I'd like to pay full price",
+        business trick users into feeling guilty about clicking the no option.
+      </p>
+    </div>
+
+    <img src='imgs/confirmshaming.png'>
+
+  </div>
 
   <h3>Bait and Switch</h3>
-  <p>
-    Bait and switch is when the user wants to do one thing, but a different, undesired
-    thing actually occurs. One of the most famous example of a bait and switch was
-    Microsoft's approach to having users upgrade their computers to Windows 10. In
-    the photo below, this pop up was shown when Microsoft prompted it's users to
-    switch. Most people who did not want to upgrade would click the "x" in the
-    top right corner. Users might have assumed that they closed the pop up and have decided
-    to not upgrade to Windows 10. However, in this specifc instance, closing the pop up
-    by clicking the "x" actually meant "Yes, I do want to upgrade my computer to Windows 10."
-  </p>
-  <img src="imgs/microsoft.jpeg">
+  <div class="row">
+    <div class="info">
+      <p>
+        Bait and switch is when the user wants to do one thing, but a different, undesired
+        thing actually occurs. One of the most famous example of a bait and switch was
+        Microsoft's approach to having users upgrade their computers to Windows 10. In
+        the photo below, this pop up was shown when Microsoft prompted it's users to
+        switch. Most people who did not want to upgrade would click the "x" in the
+        top right corner. Users might have assumed that they closed the pop up and have decided
+        to not upgrade to Windows 10. However, in this specifc instance, closing the pop up
+        by clicking the "x" actually meant "Yes, I do want to upgrade my computer to Windows 10."
+      </p>
+    </div>
+
+    <img src="imgs/microsoft.jpeg">
+  </div>
+
+  <h3>Friend Spam</h3>
+  <div class="row margin-left">
+    <p>
+      As Harry Brignull puts it, friend spam is when a product asks for your personal
+      information, such as an email, under the pretence that it will be used to
+      discover friends. However, instead, it spams your contacts with emails that
+      claims to be you.
+    </p>
+    <p>
+      LinkedIn is a company that has paid their price for using this dark pattern
+      on its users. When users signed up for their "Add Connections" feature,
+      LinkedIn would bombard their connections with emails on their behalf. Many
+      people claimed that this was instead hurting their professional
+      reputation despite the purpose of LinkedIn. As a result,
+      <a href="https://fortune.com/2015/10/05/linkedin-class-action/">LinkedIn paid
+        $13 million</a> as part of a deal to compensate their users.
+    </p>
+  </div>
 
 
 
   <h2>Dark Patterns in the News</h2>
-  <!-- <p>
-    As dark patterns are more widely used across the internet, there needs to be a 
-    way to regulate these patterns so that consumers are not tricked into doing something 
-    they did not desire. California has set regulations for businesses that ban forms 
-    of dark patterns. The FTC
-  </p> -->
   <h3>California Bans Dark Patterns</h3>
-  <p>
-    Recently California has passed a
-    <a href="https://oag.ca.gov/system/files/attachments/press-docs/CCPA%20March%2015%20Regs.pdf">regulation</a>
-    banning the use of dark patterns. This comes as an enforcement to the
-    California Consumer Privacy Act (CCPA) passed in 2018. The CCPA gives
-    Californians the right to say no to the sale of personal information. However,
-    many state officials are worried that these options to say no will be difficult
-    to navigate to, like Roach Motels. Therefore, by banning dark patterns, it
-    allows California to ensure that their consumers are not "confused or misled
-    when seeking to exercise their privacy rights."
-  </p>
-  <p>
-    The regulation does not ban
-    all forms of dark patterns, only those that have "the substantial effect of
-    subverting or impairing a consumer's choice to opt-out" of having their personal
-    information sold.
-    Tricky questions is an example of a dark pattern that would be banned as the
-    regulations state that opt-out notices shall "use straightforward language
-    and avoid technical or legal jargon". Businesses that are found to not be in
-    compliance with the regulations are sent a "notice to cure" in which they are
-    given 30 days to change their services accordingly.
-  </p>
-  <p>
-    Banning the use of dark patterns is gaining traction from both parties. In
-    2019, Senators Mark Warner(D-VA) and Deb Fischer(R-NE)
-    <a
-      href="https://www.businessinsider.com/us-senators-new-bill-would-ban-online-dark-patterns-that-trick-consumers-2019-4">
-      introduced a bill</a> banning tech
-    firms from suing dark patterns. Rohit Chopra, the commissioner of the Federal
-    Trade Commission (FTC) has spoken out against dark patterns as well. Moreover,
-    recently the FTC <a
-      href="https://www.ftc.gov/news-events/events-calendar/bringing-dark-patterns-light-ftc-workshop">held a virtual
-      workshop</a> examining dark patterns and their regulations.
-  </p>
+  <div class="margin-left">
+    <p>
+      Recently California has passed a
+      <a href="https://oag.ca.gov/system/files/attachments/press-docs/CCPA%20March%2015%20Regs.pdf">regulation</a>
+      banning the use of dark patterns. This comes as an enforcement to the
+      California Consumer Privacy Act (CCPA) passed in 2018. The CCPA gives
+      Californians the right to say no to the sale of personal information. However,
+      many state officials are worried that these options to say no will be difficult
+      to navigate to, like Roach Motels. Therefore, by banning dark patterns, it
+      allows California to ensure that their consumers are not "confused or misled
+      when seeking to exercise their privacy rights."
+    </p>
+    <p>
+      The regulation does not ban
+      all forms of dark patterns, only those that have "the substantial effect of
+      subverting or impairing a consumer's choice to opt-out" of having their personal
+      information sold.
+      Tricky questions is an example of a dark pattern that would be banned as the
+      regulations state that opt-out notices shall "use straightforward language
+      and avoid technical or legal jargon". Businesses that are found to not be in
+      compliance with the regulations are sent a "notice to cure" in which they are
+      given 30 days to change their services accordingly.
+    </p>
+    <p>
+      Banning the use of dark patterns is gaining traction from both parties. In
+      2019, Senators Mark Warner(D-VA) and Deb Fischer(R-NE)
+      <a
+        href="https://www.businessinsider.com/us-senators-new-bill-would-ban-online-dark-patterns-that-trick-consumers-2019-4">
+        introduced a bill</a> banning tech
+      firms from suing dark patterns. Rohit Chopra, the commissioner of the Federal
+      Trade Commission (FTC) has spoken out against dark patterns as well. Moreover,
+      recently the FTC <a
+        href="https://www.ftc.gov/news-events/events-calendar/bringing-dark-patterns-light-ftc-workshop">held a virtual
+        workshop</a> examining dark patterns and their regulations.
+    </p>
+  </div>
+
 
   <h3>Dark Pattern's Affect on Communities of Color</h3>
-  <p>
-    In the <a href="https://www.ftc.gov/news-events/events-calendar/bringing-dark-patterns-light-ftc-workshop">recent
-      FTC workshop</a> on dark patterns, Mutale Nkonde, CEO of AI for the People,
-    discusses the impact that dark patterns have on communities of color. The specific
-    business she brought to light is Intuit's TurboTax. Turbotax is a software that consumers
-    can use to file taxes, it is what helps bring Intuit profit. However, the IRS has
-    stated that Intuit and other commercial tax prep companies must provide a free online
-    filing system for Americans that earn below $66,000 a year. Therefore, Intuit launched
-    their free edition of TurboTax.
-  </p>
-  <p>
-    Despite promising consumers who were low income
-    free filing of their taxes and having the word "free" 5 times on their website,
-    it was not actually the case. As Nkonde explains, someone who is a TaskRabbit cleaner
-    and earns $29,000 annually needs to click through Intuit's "free" filing services
-    5 times before being told that they actually do not qualify for free filing
-    because they are an independent contractor. This branding of Intuit's free edition
-    of TurboTax is considered a dark pattern because it lets the user believe that they
-    are getting a free service as the company claims when it is not the case.
-  </p>
-  <p>
-    This affects communities of color as the median houseshold income of Black
-    Americans is $41,000, Latinx Americans is $51,000, and Native Americans is $48,000.
-    Large percentages of these communities qualify for free filing of their taxes, but
-    cannot actually file them for free, despite these "free" branded comapnies. Therefore,
-    as Nkonde says, income becomes a proxy for race.
-  </p>
-  <p>A recording of the FTC workshop can be found <a
-      href="https://www.ftc.gov/news-events/audio-video/video/dark-patterns-workshop">here</a>.</p>
+  <div class="margin-left">
+    <p>
+      In the <a href="https://www.ftc.gov/news-events/events-calendar/bringing-dark-patterns-light-ftc-workshop">recent
+        FTC workshop</a> on dark patterns, Mutale Nkonde, CEO of AI for the People,
+      discusses the impact that dark patterns have on communities of color. The specific
+      business she brought to light is Intuit's TurboTax. Turbotax is a software that consumers
+      can use to file taxes, it is what helps bring Intuit profit. However, the IRS has
+      stated that Intuit and other commercial tax prep companies must provide a free online
+      filing system for Americans that earn below $66,000 a year. Therefore, Intuit launched
+      their free edition of TurboTax.
+    </p>
+    <p>
+      Despite promising consumers who were low income
+      free filing of their taxes and having the word "free" 5 times on their website,
+      it was not actually the case. As Nkonde explains, someone who is a TaskRabbit cleaner
+      and earns $29,000 annually needs to click through Intuit's "free" filing services
+      5 times before being told that they actually do not qualify for free filing
+      because they are an independent contractor. This branding of Intuit's free edition
+      of TurboTax is considered a dark pattern because it lets the user believe that they
+      are getting a free service as the company claims when it is not the case.
+    </p>
+    <p>
+      This affects communities of color as the median houseshold income of Black
+      Americans is $41,000, Latinx Americans is $51,000, and Native Americans is $48,000.
+      Large percentages of these communities qualify for free filing of their taxes, but
+      cannot actually file them for free, despite these "free" branded comapnies. Therefore,
+      as Nkonde says, income becomes a proxy for race.
+    </p>
+    <p>A recording of the FTC workshop can be found <a
+        href="https://www.ftc.gov/news-events/audio-video/video/dark-patterns-workshop">here</a>.</p>
+  </div>
+
 </body>
 
 </html>
